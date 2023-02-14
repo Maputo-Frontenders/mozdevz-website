@@ -16,20 +16,13 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Hero className="bg-hero">
-          <h1 className="text-4xl md:text-5xl text-white font-bold break-words">
-            A maior comunidade de desenvolvedores de Moçambique
-          </h1>
-          <p className="text-gray-100">
-            Impactamos milhares de devz e impulsionamos carreiras
-          </p>
-
-          <a
-            className="button"
-            href="#"
-          >
-            Saiba mais
-          </a>
+      <Hero className="bg-hero md:py-28">
+        <h1 className="text-4xl md:text-5xl text-white font-bold break-words">
+          A maior comunidade de desenvolvedores de Moçambique
+        </h1>
+        <p className="text-gray-100">
+          Impactamos milhares de devz e impulsionamos carreiras
+        </p>
       </Hero>
 
       <main>
@@ -65,7 +58,7 @@ export default function Home() {
                 desenvolvidas.
               </p>
               <a
-                className="button"
+                className="text-primary font-extrabold"
                 href="#"
               >
                 Saiba mais
@@ -83,10 +76,6 @@ export default function Home() {
               <p className="text-gray-600">
                 Somos uma comunidade de desenvolvedores moçambicanos de software e aplicações. Usamos os nossos talentos para contribuir para o desenvolvimento social da comunidade na qual estamos inseridos.
               </p>
-
-              <a href="#" className="text-blue-500 font-bold">
-                Saiba mais
-              </a>
             </div>
 
             <div className="w-full md:w-auto flex flex-col md:flex-row items-center gap-10">
@@ -107,25 +96,12 @@ export default function Home() {
         </Section>
 
         <Section>
-          <RevealList interval={120} delay={500} className="flex flex-wrap items-center justify-center  gap-10">
-            <div className="load-hidden max-w-xs flex flex-col items-center gap-5">
-              <div className="bg-blue-500 p-5 rounded-full text-white brightnessDownWhenHover">
-                <Desktop size={56} />
-              </div>
-              <div className="text-center">
-                <h3 className="text-xl text-gray-800 font-bold">Talentos</h3>
-                <p className="mt-4">
-                  Capacitados e desenvolvemos talentos com o objective de
-                  preprarar e integrar no mercado de trabalho atraves da nossa rede de parceiros.
-                </p>
-              </div>
-            </div>
-
-            <div className="load-hidden max-w-xs flex flex-col items-center gap-5">
-              <div className="bg-blue-500 p-5 rounded-full text-white brightnessDownWhenHover">
+          <RevealList interval={120} delay={500} className="md:grid md:grid-cols-3 gap-5">
+            <div className="load-hidden max-w-xs flex flex-col  gap-5">
+              <div className="text-primary brightnessDownWhenHover">
                 <Buildings size={56} />
               </div>
-              <div className="text-center">
+              <div className="">
                 <h3 className="text-xl text-gray-800 font-bold">Startup</h3>
                 <p className="mt-4">
                   Apoiamos equipas multidisplinares com orientação e capacitação
@@ -135,11 +111,24 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="load-hidden max-w-xs flex flex-col items-center gap-5">
-              <div className="bg-blue-500 p-5 rounded-full text-white brightnessDownWhenHover">
+            <div className="load-hidden flex flex-col  gap-5">
+              <div className="text-primary brightnessDownWhenHover">
+                <Desktop size={56} />
+              </div>
+              <div className="">
+                <h3 className="text-xl text-gray-800 font-bold">Talentos</h3>
+                <p className="mt-4">
+                  Capacitados e desenvolvemos talentos com o objective de
+                  preprarar e integrar no mercado de trabalho atraves da nossa rede de parceiros.
+                </p>
+              </div>
+            </div>
+
+            <div className="load-hidden max-w-xs flex flex-col  gap-5">
+              <div className=" text-primary brightnessDownWhenHover">
                 <Buildings size={56} />
               </div>
-              <div className="text-center">
+              <div className="">
                 <h3 className="text-xl text-gray-800 font-bold">Corporate</h3>
                 <p className="mt-4">
                   Firmamos parceirias e trabalhamos com empresas e ONGs no
@@ -151,23 +140,54 @@ export default function Home() {
           </RevealList>
         </Section>
 
-        {/* Join the community */}
-        <Section className='bg-[#fafbfd]'>
-          <div className="md:flex md:flex-col md:items-center">
-            <aside className="mb-6 md:mb-8 md:w-2/5">
-              <h2 className="text-[28px] font-bold md:text-2xl text-center">
-                Gostaria de participar dos nossos meetups e ser
-                membro da comunidade?
+        <Section className="bg-[#fafbfd]">
+          <div className='md:flex md:gap-10'>
+            <div className='md:pr-10'>
+              <h2 className='md:text-4xl font-bold md:mb-8'>
+                Estrutura completa para evoluir
               </h2>
-            </aside>
-            <RevealList interval={60} delay={500} className="flex flex-col items-center md:flex-row md:gap-x-4 gap-y-4 text-center text-white px-5">
-              <a className="button !rounded-none" href="#">
-                Ser membro da Mozdevz
-              </a>
-              <a className="button !rounded-none" href="#">
-                Participar de um meetup
-              </a>
-            </RevealList>
+              <h3 className="md:pr-10 md:mb-6 md:text-2xl">
+                Nosso propósito é impulsionar pessoas através da educação.
+              </h3>
+              <p>
+                Queremos dar e elas o poder de acessar as melhores oportunidades de suas carreiras. Não medimos esforços para fazer isso acontecer.
+              </p>
+            </div>
+            <div className="">
+              <aside className="md:flex">
+                <div className='md:px-8 md:border-r-0 md:border-b-0 md:py-8 md:border-solid md:border-2 md:border-red-900'>
+                  <Buildings size={80} />
+                </div>
+                <div className="md:px-8 md:py-8 md:border-solid md:border-2 md:border-red-900">
+                  <h3 className='md:text-xl md:font-bold md:mb-2'> Mozdevz Meetup </h3>
+                  <p>
+                    Ao entrar no Discover, você terá a uma sequencias de aulas pensada para avançar na direção certa, te conectando ao universo de tecnologia e te ajudando a preparar seu ambiente para escrever suas primeiras linhas de código. Tudo de forma clara e simples.
+                  </p>
+                </div>
+              </aside>
+              <aside className="md:flex">
+                <div className='md:px-8 md:border-r-0 md:border-b-0 md:py-8 md:border-solid md:border-2 md:border-red-900'>
+                  <Buildings size={80} />
+                </div>
+                <div className="md:px-4 md:py-8 md:border-solid md:border-2 md:border-red-900">
+                  <h3 className='md:text-xl md:font-bold md:mb-2'> Mozdevz Meetup </h3>
+                  <p>
+                    Ao entrar no Discover, você terá a uma sequencias de aulas pensada para avançar na direção certa, te conectando ao universo de tecnologia e te ajudando a preparar seu ambiente para escrever suas primeiras linhas de código. Tudo de forma clara e simples.
+                  </p>
+                </div>
+              </aside>
+              <aside className="md:flex">
+                <div className='md:px-8 md:border-r-0 md:py-8 md:border-solid md:border-2 md:border-red-900'>
+                  <Buildings size={80} />
+                </div>
+                <div className="md:px-4 md:py-8 md:border-solid md:border-2 md:border-red-900">
+                  <h3 className='md:text-xl md:font-bold md:mb-2'> Mozdevz Meetup </h3>
+                  <p>
+                    Ao entrar no Discover, você terá a uma sequencias de aulas pensada para avançar na direção certa, te conectando ao universo de tecnologia e te ajudando a preparar seu ambiente para escrever suas primeiras linhas de código. Tudo de forma clara e simples.
+                  </p>
+                </div>
+              </aside>
+            </div>
           </div>
         </Section>
 
