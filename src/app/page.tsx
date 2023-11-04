@@ -154,7 +154,7 @@ ax-w-md flex flex-col gap-5"
             <h2 className="text-gray-900 text-3xl">
               {lang.staticContent.teamTitle}
             </h2>
-            <p className="text-gray-600 text-justify hover:text-center">
+            <p className="text-gray-600 text-justify">
               {lang.staticContent.teamSubtitle}
             </p>
           </div>
