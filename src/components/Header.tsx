@@ -71,7 +71,7 @@ const Header: React.FC = () => {
               </ul>
             </nav>
           </div>
-
+          {/**Buttons Div */}
           <div className=' basis-2/5 flex justify-end gap-x-4'>
 
             <a className="button text-sm" href="https://linktr.ee/mozdevz">
